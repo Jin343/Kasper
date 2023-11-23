@@ -42,7 +42,7 @@ justify-content: center;
 }
 
 .header .container {
-    position: fixed;
+    position: sticky;
     height: 70px;
     width: 80%;
     display: flex;
@@ -602,7 +602,16 @@ cursor: pointer;
         font-size: 11px;
     } 
 }
-.protofolio-content ul a:hover,
+@media (min-width:767px){
+.protofolio-content ul a:hover{
+    background-color: rgba(15, 203, 255, 0.796);
+}
+}
+@media (max-width:767px){
+    .protofolio-content ul .clickedButton{
+        background-color: rgba(15, 203, 255, 0.796);
+    }
+    }
 .active-protofolio-button {
     color: #fff;
     background-color: rgba(15, 203, 255, 0.796);
