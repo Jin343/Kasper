@@ -26,16 +26,17 @@ p{
 }
 @media (max-width:767px){
     p{
-        font-size: 11px;
+        font-size: 12px;
     } 
 }
 .header {
+    padding:10px 0;
     height: fit-content;
     display: flex;
 justify-content: center;
     z-index: 1000;
     top:0;
-    position: fixed;
+    position: sticky;
     width: 100%;
     transition: background-color 0.5s;
 }
@@ -148,7 +149,7 @@ justify-content: center;
     background-image: url("https://virtuoart.com/public/uploads/preview/45637efed704ed4b03777c23daf271a3-61861588152191fbbzqqg3d3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center ;
 }
 
 .landing::before {
@@ -493,6 +494,9 @@ cursor: pointer;
 }
 
 @media (max-width:767px) {
+    .design .container::before {
+        background-color: rgba(39, 70, 89);
+    }
     .design {
         height:fit-content;
     }
@@ -583,7 +587,8 @@ cursor: pointer;
     text-transform: uppercase;
 }
 
-.protofolio-content ul li {
+.protofolio-content ul a {
+    text-decoration: none;
     font-size: 13px;
     margin-left: 3px;
     padding: 13px 20px;
@@ -592,12 +597,12 @@ cursor: pointer;
     transition: background-color 0.5s, color 0.5s;
 }
 @media (max-width:767px) {
-    .protofolio-content ul li {
+    .protofolio-content ul a {
     padding: 10px 15px;
         font-size: 11px;
     } 
 }
-.protofolio-content ul li:hover,
+.protofolio-content ul a:hover,
 .active-protofolio-button {
     color: #fff;
     background-color: rgba(15, 203, 255, 0.796);
@@ -819,7 +824,7 @@ width: 80%;
         height: 80px;
     }
     .skills .container {
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
         grid-template-columns: 1fr;
     }
@@ -863,7 +868,7 @@ margin:20px 0;
 }
 .skills .our-skills .one-skill p{
     margin-right:auto;
-    font-size: 11px;
+    font-size: 12px;
     text-align: left;
 }
 .skills .our-skills .one-skill .progress{
@@ -1081,23 +1086,15 @@ text-align: center;
     .pricing .container {
         width:80%;}
     .pricing .content{
-        grid-template-columns: 1fr;
-    }
-    .pricing .head p{
-        font-size: 10px;
+        grid-gap:30px;
+        grid-template-columns: 1fr 1fr;
     }
     .pricing .features ul li{
         padding:20px 0;
-        font-size: 10px;
-    }
-    .pricing span:nth-child(1){
         font-size: 12px;
     }
     .pricing  span:nth-child(2){
-        font-size: 30px;
-    }
-    .pricing .foot button {
-        font-size: 10px;
+        font-size: 33px;
     }
 }
 .pricing .foot button:hover{
@@ -1118,10 +1115,10 @@ background-color:var(--pricing-color);
     color:white;
     cursor: pointer;
     background-color: #00c3ff;
-    transition:  color 0.7s;
+    transition:  background-color 0.7s;
 }
 .footer button:hover{
-color:#000000;
+    background-color:#000000;
 }
 .email{
     padding:30px 70px;
@@ -1143,7 +1140,7 @@ color:#000000;
 }
 @media (max-width:1039px){
     .email-inputs{
-    width: 70%;
+    width: 85%;
     }
 }
 .email-inputs .icon {
@@ -1167,12 +1164,18 @@ font-size: 17px;
     border-bottom:2px solid transparent;
 }
 .email-inputs .input  button{
+    height: 101%;
+    margin-top: -0.5px;
     width:40%;
     cursor: pointer;
     font-size: 15px;
     border:none;
     background-color: #02c1da;
-    color:white
+    color:white;
+    transition:  background-color 0.5s;
+}
+.email-inputs .input  button:hover{
+    background-color: #004b54;
 }
 .email-inputs  input:focus{
     outline: none;
@@ -1269,8 +1272,12 @@ height: 130px;
         color:white;
         background-color: #00c3ff;
         margin-left: auto;
-    }
-
+        cursor: pointer;
+         transition:  background-color 0.5s;
+}
+.contacts button:hover{
+    background-color: #004b54;
+}
 footer{
     height: 400px;;
     width:100%;
