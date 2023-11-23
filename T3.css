@@ -796,7 +796,7 @@ width:50px;
     width: 100%;
 }
 .skills .sec{
-    margin: 60px 10px;
+    margin: 60px 20px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1005,7 +1005,7 @@ flex-direction: column;
 .pricing .content{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap:20px;
+    grid-gap:40px;
 }
 .pricing span:nth-child(1){
     font-size: 16px;
@@ -1081,6 +1081,8 @@ text-align: center;
     .pricing .foot button {
         font-size: 12px;
     }
+    .pricing .content{
+        grid-gap:40px;}
 }
 @media (max-width:767px){
     .pricing .container {
