@@ -36,13 +36,13 @@ p{
 justify-content: center;
     z-index: 1000;
     top:0;
-    position: sticky;
+    position: fixed;
     width: 100%;
     transition: background-color 0.5s;
 }
 
 .header .container {
-    position: sticky;
+    position: fixed;
     height: 70px;
     width: 80%;
     display: flex;
@@ -144,7 +144,7 @@ justify-content: center;
 .landing {
     z-index: 1;
     position: relative;
-    height: 660px;
+    height: 90vh;
     width: 100%;
     background-image: url("https://virtuoart.com/public/uploads/preview/45637efed704ed4b03777c23daf271a3-61861588152191fbbzqqg3d3.jpg");
     background-size: cover;
