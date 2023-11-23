@@ -1152,7 +1152,7 @@ background-color:var(--pricing-color);
 }
 @media (max-width:1039px){
     .email-inputs{
-    width: 85%;
+    width: 93%;
     }
 }
 .email-inputs .icon {
@@ -1199,7 +1199,6 @@ font-size: 17px;
 }
 .email-inputs  input:focus{
     outline: none;
-    border-bottom:2px solid #02c1da;
 }
 @media (max-width:767px){
     .email-inputs{
